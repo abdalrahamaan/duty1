@@ -1,0 +1,106 @@
+*{
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --first-color: hsl(288, 84%, 87%);
+    --second-color:hsl(288, 84%, 62%);
+    --third-color: hsl(288, 84%, 37%);
+
+    --first-p-color: hsl(185, 97%, 87%);
+    --second-p-color:hsl(185, 97%, 62%);
+    --third-p-color: hsl(185, 97%, 37%);
+
+    --dark-color:  hsl(0, 0%, 10%);
+    --light-color: hsl(0, 0%, 90%);
+    
+
+}
+
+body{
+
+    background-color: var( --second-color);
+    background-repeat: no-repeat;
+}
+
+.main-wrop{
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0 4px hsl(0, 0%, 30%);
+}
+
+.wrop-h1{
+    min-height: 440px;
+    background-image: url(./cety\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-transform: uppercase;
+}
+
+.wrop-h1 h1{
+    text-shadow: 0 0 4px var(--first-p-color);
+}
+
+.wrop-nav{ 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;   
+    /* background-color: var(--third-p-color); */
+}
+nav a{
+    padding: 0.5rem 2rem;
+    flex-basis: 25%;
+    font-size: 1rem;
+    text-transform: uppercase;    
+    color: var(--dark-color);
+    background-color: var(--third-p-color);
+}
+    
+nav a:hover{
+    background-color: var(--light-color);
+    color: var(--third-p-color);
+}
+
+.wrop-main{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+    background-color: var(--first-color);
+}
+
+.wrop-main h2{
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    padding: 0.85rem;
+    color: var(--third-p-color);
+}
+
+.wrop-main p{
+    margin: 0 1rem;
+    padding: 0.85rem;
+    color: var(--dark-color);
+}
+
+footer{
+    background-color: var(--third-color);
+    padding: 1.8rem 2rem;
+    color: var(--light-color);
+    margin: auto 0;
+}
